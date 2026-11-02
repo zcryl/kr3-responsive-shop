@@ -127,3 +127,7 @@ kr3-responsive-shop/
 Репозиторий: https://github.com/zcryl/kr3-responsive-shop
 
 GitHub Pages не включён в рамках этой работы.
+
+## История работы
+
+Исходная версия сохранена отдельным коммитом, адаптивность — коммитом `feat: add responsive layout and product images`. Исправления доступности и отчёты приняты через [Pull Request №1](https://github.com/zcryl/kr3-responsive-shop/pull/1). Финальная проверка оформлена веткой `fix/kr3-final-check`.
