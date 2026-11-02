@@ -6,7 +6,8 @@
   /* Основные цвета проекта */
   --color-bg: #ffffff;
   --color-text: #222222;
-  --color-muted: #b2afaf;
+  --color-muted: #555555;
+  --color-primary: #0057b8;
   --color-button: black;
   --color-primary-dark: #555454;
   --color-border: #030303;
@@ -44,7 +45,6 @@
 * {
   box-sizing: border-box;
 }
-
 
 .page {
   margin: 0;
@@ -96,7 +96,6 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-
 .site-header__inner {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -107,7 +106,7 @@ a:focus-visible {
   text-decoration: none;
   color: white;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
 
 }
@@ -147,7 +146,6 @@ a:focus-visible {
    4. Компоненты страницы
    =============================== */
 
-
 .hero {
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
@@ -161,11 +159,9 @@ a:focus-visible {
   margin: 0 auto var(--space-xl);
 }
 
-
 .section__title {
   margin-top: 0;
 }
-
 
 .product-card {
   display: flex;
@@ -183,11 +179,9 @@ a:focus-visible {
   align-self: flex-start;
 }
 
-
 .product-card:hover {
   border-color: var(--color-primary);
 }
-
 
 .product-card__title {
   margin-top: 0;
@@ -233,7 +227,6 @@ a:focus-visible {
   opacity: 0.6;
   cursor: not-allowed;
 }
-
 
 /*
   Дополнительный информационный блок.
@@ -320,7 +313,6 @@ a:focus-visible {
 .order-form__textarea:hover {
   border-color: var(--color-primary);
 }
-
 
 /*
   Видимый фокус для клавиатурной навигации.
@@ -463,4 +455,15 @@ html{
   width: 100%;
   margin-bottom: 20px;
 }
+
+/* Доступность: видимый фокус и пропуск повторяющейся навигации. */
+:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }
+.site-header :focus-visible { outline-color: #ffda60; }
+.skip-link { position: absolute; top: -120px; left: 16px; z-index: 1000; padding: 12px 16px; background: #111; color: #fff; border-radius: 6px; }
+.skip-link:focus { top: 16px; color: #fff; }
+.form-error { color: var(--color-danger); margin-block: 8px 0; }
+.form-note { color: var(--color-muted); }
+.selected-product { font-weight: 700; }
+.site-header__logo:hover { color: #fff; text-decoration: underline; }
+.order-form__field--checkbox .order-form__label { display: flex; gap: 10px; align-items: center; min-height: 44px; }
 

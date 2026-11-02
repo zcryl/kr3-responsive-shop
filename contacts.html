@@ -7,6 +7,7 @@
         <title>Контакты — Учебный интернет-магазин</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/main.js" defer></script>
         <meta property="og:type" content="website">
         <meta property="og:title" content="Учебный интернет-магазин">
         <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
@@ -53,10 +54,25 @@
 
     <section class="section" id="feedback">
       <h2 class="section__title">Обратная связь</h2>
-      <p>
-        Для отправки заявки используйте форму в модальном окне на главной странице.
-      </p>
-      <a class="button button--primary" href="index.html#request">Перейти к форме</a>
+
+      <p class="form-note">Все поля обязательны. Учебная форма не отправляет данные на сервер.</p>
+      <form class="order-form" id="feedback-form" data-success="feedback-success" novalidate>
+        <div class="order-form__field">
+          <label class="order-form__label" for="feedback-name">Имя *</label>
+          <input class="order-form__input" id="feedback-name" name="name" type="text" autocomplete="given-name" minlength="2" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="feedback-email">E-mail *</label>
+          <input class="order-form__input" id="feedback-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="order-form__field order-form__field--wide">
+          <label class="order-form__label" for="feedback-comment">Сообщение *</label>
+          <textarea class="order-form__textarea" id="feedback-comment" name="comment" rows="4" minlength="5" required></textarea>
+        </div>
+        <div class="order-form__actions"><button class="button button--primary" type="submit">Проверить сообщение</button></div>
+      </form>
+      <p class="success-message" id="feedback-success" role="status" hidden>Сообщение проверено. Это учебная форма: данные на сервер не отправляются.</p>
+
     </section>
   </main>
 
@@ -66,5 +82,4 @@
   </footer>
 </body>
 </html>
-
 
