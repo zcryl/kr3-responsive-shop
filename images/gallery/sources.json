@@ -1,0 +1,60 @@
+{
+  "downloaded": "2026-11-02",
+  "note": "Дополнительные фотографии товаров для учебного проекта. Исходные страницы и прямые ссылки сохранены для атрибуции; свободная лицензия не заявляется. У фото может отличаться сезон или комплектация — это отмечено в описаниях.",
+  "photos": [
+    {
+      "key": "raphinha_shirt",
+      "page": "https://www.fcbarcelona.es/es/fotos/4300437/la-nueva-equipacion-en-la-barca-botiga",
+      "url": "https://www.fcbarcelona.com/photo-resources/2025/07/02/425d3c5a-6cb8-432e-9304-242250702d7c/_MGA8455.jpg?height=2000&width=3200",
+      "alt": "Футболка Barcelona Raphinha 11 в магазине клуба"
+    },
+    {
+      "key": "safonov_shirt",
+      "page": "https://mws.com/us/product/matvey-safonov-paris-saint-germain-TabagN1pfkWSPcyfBNFMGA",
+      "url": "https://mwsprod.imgix.net/imgix/products/3a18325d-5684-edc6-9597-c104b5a343ef/media-content/39-back-b82c50b8-ea8f-4f6f-a524-8880fde48bd1.png?auto=format&fit=fill&h=960&w=960",
+      "alt": "Футболка PSG Safonov 39, вид сзади"
+    },
+    {
+      "key": "golobin_shirt",
+      "page": "https://footzilla.shop/products/monaco-as-home-jersey-25-26-adults",
+      "url": "https://footzilla.shop/cdn/shop/files/1_8d1bd091-735f-42e0-b1f8-8e70840c9725.jpg?v=1758982053",
+      "alt": "Домашняя футболка AS Monaco, вид спереди"
+    },
+    {
+      "key": "raphinha_POP",
+      "page": "https://thefixers.gr/en/products/funko-pop-football-barcelona-fc-raphinha-72234",
+      "url": "https://thefixers.gr/cdn/shop/files/funko-pop-football-barcelona-fc-raphinha-72234_42a2d68b-e2d7-4829-803f-2f1132e840a3.webp?v=1790937667&width=960",
+      "alt": "Упаковка фигурки Funko POP Raphinha, вид сзади"
+    },
+    {
+      "key": "Lamine_POP",
+      "page": "https://funko.com/im/pop-lamine-yamal/89370.html",
+      "url": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw9724744f/images/funko/upload/1/89370_POPSports_MLS_LamineYamal_POP_GLAM-1-WEB.png?sw=960&sh=960",
+      "alt": "Фигурка Funko POP Lamine Yamal с коробкой"
+    },
+    {
+      "key": "CR7_POP",
+      "page": "https://www.mercadolibre.com.mx/funko-pop-cristiano-ronaldo-cr7-portugal/up/MLMU3175542218",
+      "url": "https://http2.mlstatic.com/D_NQ_NP_668079-MLM84320513990_052025-O.webp",
+      "alt": "Фигурка Cristiano Ronaldo в форме Португалии с коробкой"
+    },
+    {
+      "key": "barcelona_shorts",
+      "page": "https://store.fcbarcelona.com/collections/bags-backpacks/products/fc-barcelona-home-short-25-26",
+      "url": "https://store.fcbarcelona.com/cdn/shop/files/20_11edcba9-f63c-4e4e-89f2-19aac0effe95.jpg?v=1753180328",
+      "alt": "Домашние шорты FC Barcelona, дополнительное фото"
+    },
+    {
+      "key": "PSG_shorts",
+      "page": "https://store.psg.fr/en/c-13662",
+      "url": "https://images.footballfanatics.com/paris-saint-germain/psg-nike-dri-fit-adv-home-match-short-2025-26_ss5_p-202333091%2Bu-ooqvsm5lg5rpn2bbe9k2%2Bv-uvnd8rhtebisbkuavtrv.jpeg?_hv=2&w=1000",
+      "alt": "Домашние шорты PSG, дополнительное фото"
+    },
+    {
+      "key": "monaco_shorts",
+      "page": "https://www.futbolemotion.com/en/buy/shorts/kappa/as-monaco-primera-equipacion-2023-2024-white-red",
+      "url": "https://www.futbolemotion.com/imagesarticulos/200508/grandes/pantalon-corto-kappa-as-monaco-primera-equipacion-2023-2024-white-red-0.jpg",
+      "alt": "Белые домашние шорты AS Monaco с красной отделкой"
+    }
+  ]
+}

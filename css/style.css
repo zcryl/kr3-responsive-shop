@@ -467,3 +467,32 @@ html{
 .site-header__logo:hover { color: #fff; text-decoration: underline; }
 .order-form__field--checkbox .order-form__label { display: flex; gap: 10px; align-items: center; min-height: 44px; }
 
+
+/* Дополнение: доступное бургер-меню и галереи товаров. */
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #fff;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+.menu-toggle[hidden], .product-gallery__controls[hidden], .product-gallery__slide[hidden] { display: none; }
+.menu-toggle__icon { display: grid; gap: 4px; width: 22px; }
+.menu-toggle__icon span { display: block; height: 2px; background: currentColor; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.product-gallery { min-width: 0; }
+.product-gallery__viewport { touch-action: pan-y; }
+.product-gallery__slide { margin: 0; }
+.product-gallery__controls { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; }
+.product-gallery__button { min-width: 44px; min-height: 44px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: #fff; color: var(--color-text); font: inherit; cursor: pointer; }
+.product-gallery__button:hover { background: var(--color-surface); }
+.product-gallery__status { font-size: .875rem; text-align: center; }
