@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Каталог товаров учебного интернет-магазина">
+        <title>
+            Каталог товаров
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Учебный интернет-магазин">
+        <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+        <meta property="og:image" content="https://zcryl.github.io/kr1-html-css-shop/images/preview.jpg">
+        <script src="js/catalog.js" defer></script>
+    </head>
+
+    <body class="page">
+        <header class="site-header">
+            <div class="site-header__inner">
+                <h1 class="site-header__logo" href="index.html">FootballShop</h1>
+
+                <nav class="site-nav" aria-label="Основная навигация">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" aria-current="page" href="catalog.html">Каталог</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page__main">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+                <span class="breadcrumbs__current" aria-current="page">Каталог</span>
+            </nav>
+
+            <section class="section">
+                <h1>Каталог товаров</h1>
+            </section>
+
+            <section class="catalog-layout">
+                <aside class="catalog-filters">
+                    <h2>Фильтры</h2>
+
+                    <form class="filters-form" action="#" method="get">
+                    <fieldset class="filters-form__group">
+                        <legend class="filters-form__legend">Категория</legend>
+
+                        <label class="filters-form__label">
+                            <input type="checkbox" name="category" value="shirts">
+                            Футболки
+                        </label>
+
+                        <label class="filters-form__label">
+                            <input type="checkbox" name="category" value="shorts">
+                            Шорты
+                        </label>
+
+                        <label class="filters-form__label">
+                            <input type="checkbox" name="category" value="toys">
+                            Игрушки
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filters-form__group">
+                        <legend class="filters-form__legend">Цена</legend>
+
+                        <label class="filters-form__label" for="price-from">От</label>
+                        <input 
+                        class="filters-form__input" 
+                        id="price-from" 
+                        name="price-from" 
+                        type="number" 
+                        min="0" 
+                        step="1"
+                        placeholder="0">
+
+                        <label class="filters-form__label" for="price-to">До</label>
+                        <input 
+                        class="filters-form__input" 
+                        id="price-to" 
+                        name="price-to"
+                        type="number" 
+                        min="0" 
+                        step="1"
+                        placeholder="0">
+                    </fieldset>
+
+                    <button 
+                    class="button button--primary" 
+                    type="submit">
+                        Применить
+                    </button>
+
+                    <button 
+                    class="button--secondary"
+                    type="reset">
+                        Сбросить
+                    </button>
+                    </form>
+                </aside>
+
+                <section class="catalog-layout__products">
+                    <h2>Список товаров</h2>
+
+                    <div class="products-grid">
+                <article 
+                class="product-card"
+                data-category="shirts"
+                data-price="15000"
+                >
+                    <h3 class="product-card__title">Футболка FCB Raphinha 11</h3>
+                    <img 
+                        src="images/raphinha_shirt.jpg"
+                        class="card-image"/>
+                    <p class="product-card__description">Фанатская версия футболки Barcelona Raphinha 11.</p>
+                    <p class="product-card__price">Цена: 15000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                <article 
+                class="product-card"
+                data-category="shirts"
+                data-price="10000"
+                >
+                    <h3 class="product-card__title">Футболка PSG Safonov 39</h3>
+                    <img 
+                        src="images/safonov_shirt.webp"
+                        class="card-image"/>
+                    <p class="product-card__description">Фанатская версия футболки PSG Safonov 39.</p>
+                    <p class="product-card__price">Цена: 10000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                <article 
+                class="product-card"
+                data-category="toys"
+                data-price="10000">
+                    <h3 class="product-card__title">Игрушка Funco POP Cristiano Ronaldo</h3>
+                    <img 
+                        src="images/CR7_POP.jpg"
+                        class="card-image"/>
+                    <p class="product-card__description">Игрушка Funco POP Portugal Cristiano Ronaldo </p>
+                    <p class="product-card__price">Цена: 10000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                <article 
+                class="product-card"
+                data-category="toys"
+                data-price="6000">
+                    <h3 class="product-card__title">Игрушка Lamine Yamal</h3>
+                    <img 
+                        src="images/Lamine_POP.webp"
+                        class="card-image"/>
+                    <p class="product-card__description">Игрушка Funco POP Barcelona Lamine Yamal.</p>
+                    <p class="product-card__price">Цена: 6000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                <article
+                class="product-card"
+                data-category="shorts"
+                data-price="8000">
+                    <h3 class="product-card__title">Шорты FC Barcelona</h3>
+                    <img 
+                        src="images/barcelona_shorts.jpg"
+                        class="card-image"/>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">Цена: 8000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                <article 
+                class="product-card"
+                data-category="shorts"
+                data-price="8000">
+                    <h3 class="product-card__title">Шорты PSG</h3>
+                    <img 
+                        src="images/PSG_shorts.jpg"
+                        class="card-image"/>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">Цена: 8000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                <article 
+                class="product-card"
+                data-category="shorts"
+                data-price="6000">
+                    <h3 class="product-card__title">Шорты FC Monaco </h3>
+                    <img 
+                        src="images/monaco_shorts.jpg"
+                        class="card-image"/>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">Цена: 6000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                <article
+                class="product-card"
+                data-category="shirts"
+                data-price="10000">
+                    <h3 class="product-card__title">Футболка FC Monaco Golovin 10</h3>
+                    <img 
+                        src="images/golobin_shirt.webp"
+                        class="card-image"/>
+                    <p class="product-card__description">Фанатская версия футболки Monaco игрока Golovin 10.</p>
+                    <p class="product-card__price">Цена: 10000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+                <article class="product-card"
+                data-category="toys"
+                data-price="6000">
+                    <h3 class="product-card__title">Игрушка Funco POP Raphinia</h3>
+                    <img 
+                        src="images/raphinha_POP.jpg"
+                        class="card-image"/>
+                    <p class="product-card__description">Игрушка Funco POP Barcelona Raphinia </p>
+                    <p class="product-card__price">Цена: 6000 руб.</p>
+                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                </article>
+
+                
+                    </div>
+                    <p class="catalog-layout__empty" role="status" hidden>
+                        По выбранным фильтрам товары не найдены.
+                    </p>
+                </section>
+            </section>
+        </main>
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+        <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+    </body>
+</html>
+
