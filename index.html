@@ -7,6 +7,7 @@
   <meta name="description" content="Футболки, шорты и фигурки любимых футболистов в учебном магазине FootballShop.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/ui.js" defer></script>
   <script src="js/main.js" defer></script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Учебный интернет-магазин">
@@ -20,7 +21,11 @@
   <div class="site-header__inner">
     <a class="site-header__logo" href="index.html">FootballShop</a>
 
-    <nav class="site-nav" aria-label="Основная навигация">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>
+      <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="menu-toggle__label">Меню</span>
+    </button>
+    <nav class="site-nav" id="primary-nav" aria-label="Основная навигация">
       <ul class="site-nav__list">
         <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" aria-current="page" href="index.html">Главная</a></li>
         <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
@@ -49,11 +54,28 @@
 
       <div class="products-grid">
         <article class="product-card">
-          <h3 class="product-card__title">Футболка FCB Raphinha 11</h3>
-          <picture>
+          <h3 class="product-card__title" id="product-title-raphinha_shirt">Футболка FCB Raphinha 11</h3>
+          <div class="product-gallery" role="group" aria-roledescription="карусель" aria-labelledby="product-title-raphinha_shirt">
+            <div class="product-gallery__viewport">
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="1 из 2">
+                <picture>
             <source type="image/webp" srcset="images/responsive/raphinha_shirt-320.webp 320w, images/responsive/raphinha_shirt-640.webp 640w, images/responsive/raphinha_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
             <img src="images/raphinha_shirt.jpg" alt="Футболка FCB Raphinha 11" width="960" height="960" loading="lazy" class="card-image">
           </picture>
+              </figure>
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="2 из 2" hidden>
+                <picture>
+                  <source type="image/webp" srcset="images/gallery/raphinha_shirt-320.webp 320w, images/gallery/raphinha_shirt-640.webp 640w, images/gallery/raphinha_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+                  <img src="images/gallery/raphinha_shirt-960.webp" alt="Футболка Barcelona Raphinha 11 в магазине клуба" width="960" height="960" loading="lazy" decoding="async" class="card-image">
+                </picture>
+              </figure>
+            </div>
+            <div class="product-gallery__controls" hidden>
+              <button class="product-gallery__button" type="button" data-gallery-direction="-1" aria-label="Предыдущее фото"><span aria-hidden="true">&#8249;</span></button>
+              <span class="product-gallery__status" aria-live="polite" aria-atomic="true">Фото 1 из 2</span>
+              <button class="product-gallery__button" type="button" data-gallery-direction="1" aria-label="Следующее фото"><span aria-hidden="true">&#8250;</span></button>
+            </div>
+          </div>
 
           <p class="product-card__price">Цена: 15000 руб.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Футболка FCB Raphinha 11">
@@ -62,11 +84,28 @@
         </article>
 
         <article class="product-card">
-          <h3 class="product-card__title">Игрушка Funco POP Raphinia</h3>
-          <picture>
+          <h3 class="product-card__title" id="product-title-raphinha_POP">Игрушка Funco POP Raphinia</h3>
+          <div class="product-gallery" role="group" aria-roledescription="карусель" aria-labelledby="product-title-raphinha_POP">
+            <div class="product-gallery__viewport">
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="1 из 2">
+                <picture>
             <source type="image/webp" srcset="images/responsive/raphinha_POP-320.webp 320w, images/responsive/raphinha_POP-640.webp 640w, images/responsive/raphinha_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
             <img src="images/raphinha_POP.jpg" alt="Игрушка Funco POP Raphinia" width="960" height="960" loading="lazy" class="card-image">
           </picture>
+              </figure>
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="2 из 2" hidden>
+                <picture>
+                  <source type="image/webp" srcset="images/gallery/raphinha_POP-320.webp 320w, images/gallery/raphinha_POP-640.webp 640w, images/gallery/raphinha_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+                  <img src="images/gallery/raphinha_POP-960.webp" alt="Упаковка фигурки Funko POP Raphinha, вид сзади" width="960" height="960" loading="lazy" decoding="async" class="card-image">
+                </picture>
+              </figure>
+            </div>
+            <div class="product-gallery__controls" hidden>
+              <button class="product-gallery__button" type="button" data-gallery-direction="-1" aria-label="Предыдущее фото"><span aria-hidden="true">&#8249;</span></button>
+              <span class="product-gallery__status" aria-live="polite" aria-atomic="true">Фото 1 из 2</span>
+              <button class="product-gallery__button" type="button" data-gallery-direction="1" aria-label="Следующее фото"><span aria-hidden="true">&#8250;</span></button>
+            </div>
+          </div>
           <p class="product-card__price">Цена: 10000 руб.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Игрушка Funco POP Raphinia">
             Заказать
@@ -75,11 +114,28 @@
         </article>
 
         <article class="product-card">
-          <h3 class="product-card__title">Игрушка Funco POP Lamine Yamal</h3>
-          <picture>
+          <h3 class="product-card__title" id="product-title-Lamine_POP">Игрушка Funco POP Lamine Yamal</h3>
+          <div class="product-gallery" role="group" aria-roledescription="карусель" aria-labelledby="product-title-Lamine_POP">
+            <div class="product-gallery__viewport">
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="1 из 2">
+                <picture>
             <source type="image/webp" srcset="images/responsive/Lamine_POP-320.webp 320w, images/responsive/Lamine_POP-640.webp 640w, images/responsive/Lamine_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
             <img src="images/Lamine_POP.webp" alt="Игрушка Funco POP Lamine Yamal" width="960" height="960" loading="lazy" class="card-image">
           </picture>
+              </figure>
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="2 из 2" hidden>
+                <picture>
+                  <source type="image/webp" srcset="images/gallery/Lamine_POP-320.webp 320w, images/gallery/Lamine_POP-640.webp 640w, images/gallery/Lamine_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+                  <img src="images/gallery/Lamine_POP-960.webp" alt="Фигурка Funko POP Lamine Yamal с коробкой" width="960" height="960" loading="lazy" decoding="async" class="card-image">
+                </picture>
+              </figure>
+            </div>
+            <div class="product-gallery__controls" hidden>
+              <button class="product-gallery__button" type="button" data-gallery-direction="-1" aria-label="Предыдущее фото"><span aria-hidden="true">&#8249;</span></button>
+              <span class="product-gallery__status" aria-live="polite" aria-atomic="true">Фото 1 из 2</span>
+              <button class="product-gallery__button" type="button" data-gallery-direction="1" aria-label="Следующее фото"><span aria-hidden="true">&#8250;</span></button>
+            </div>
+          </div>
           <p class="product-card__price">Цена: 6000 руб.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Игрушка Funco POP Lamine Yamal">
             Заказать
@@ -93,11 +149,28 @@
 
       <div class="products-grid">
         <article class="product-card">
-          <h3 class="product-card__title">Игрушка Funco POP Ronaldo</h3>
-          <picture>
+          <h3 class="product-card__title" id="product-title-CR7_POP">Игрушка Funco POP Ronaldo</h3>
+          <div class="product-gallery" role="group" aria-roledescription="карусель" aria-labelledby="product-title-CR7_POP">
+            <div class="product-gallery__viewport">
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="1 из 2">
+                <picture>
             <source type="image/webp" srcset="images/responsive/CR7_POP-320.webp 320w, images/responsive/CR7_POP-640.webp 640w, images/responsive/CR7_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
             <img src="images/CR7_POP.jpg" alt="Игрушка Funco POP Ronaldo" width="960" height="960" loading="lazy" class="card-image">
           </picture>
+              </figure>
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="2 из 2" hidden>
+                <picture>
+                  <source type="image/webp" srcset="images/gallery/CR7_POP-320.webp 320w, images/gallery/CR7_POP-640.webp 640w, images/gallery/CR7_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+                  <img src="images/gallery/CR7_POP-960.webp" alt="Фигурка Cristiano Ronaldo в форме Португалии с коробкой" width="960" height="960" loading="lazy" decoding="async" class="card-image">
+                </picture>
+              </figure>
+            </div>
+            <div class="product-gallery__controls" hidden>
+              <button class="product-gallery__button" type="button" data-gallery-direction="-1" aria-label="Предыдущее фото"><span aria-hidden="true">&#8249;</span></button>
+              <span class="product-gallery__status" aria-live="polite" aria-atomic="true">Фото 1 из 2</span>
+              <button class="product-gallery__button" type="button" data-gallery-direction="1" aria-label="Следующее фото"><span aria-hidden="true">&#8250;</span></button>
+            </div>
+          </div>
           <p class="product-card__price">Цена: 10000 руб.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Игрушка Funco POP Ronaldo">
             Заказать
@@ -105,11 +178,28 @@
         </article>
 
         <article class="product-card">
-          <h3 class="product-card__title">Футболка Monaco Golovin 10</h3>
-          <picture>
+          <h3 class="product-card__title" id="product-title-golobin_shirt">Футболка Monaco Golovin 10</h3>
+          <div class="product-gallery" role="group" aria-roledescription="карусель" aria-labelledby="product-title-golobin_shirt">
+            <div class="product-gallery__viewport">
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="1 из 2">
+                <picture>
             <source type="image/webp" srcset="images/responsive/golobin_shirt-320.webp 320w, images/responsive/golobin_shirt-640.webp 640w, images/responsive/golobin_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
             <img src="images/golobin_shirt.webp" alt="Футболка Monaco Golovin 10" width="960" height="960" loading="lazy" class="card-image">
           </picture>
+              </figure>
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="2 из 2" hidden>
+                <picture>
+                  <source type="image/webp" srcset="images/gallery/golobin_shirt-320.webp 320w, images/gallery/golobin_shirt-640.webp 640w, images/gallery/golobin_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+                  <img src="images/gallery/golobin_shirt-960.webp" alt="Домашняя футболка AS Monaco, вид спереди" width="960" height="960" loading="lazy" decoding="async" class="card-image">
+                </picture>
+              </figure>
+            </div>
+            <div class="product-gallery__controls" hidden>
+              <button class="product-gallery__button" type="button" data-gallery-direction="-1" aria-label="Предыдущее фото"><span aria-hidden="true">&#8249;</span></button>
+              <span class="product-gallery__status" aria-live="polite" aria-atomic="true">Фото 1 из 2</span>
+              <button class="product-gallery__button" type="button" data-gallery-direction="1" aria-label="Следующее фото"><span aria-hidden="true">&#8250;</span></button>
+            </div>
+          </div>
           <p class="product-card__price">Цена: 8000 руб.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Футболка Monaco Golovin 10">
             Заказать
@@ -118,11 +208,28 @@
         </article>
 
         <article class="product-card">
-          <h3 class="product-card__title">Футболка PSG Safonov 39 </h3>
-          <picture>
+          <h3 class="product-card__title" id="product-title-safonov_shirt">Футболка PSG Safonov 39 </h3>
+          <div class="product-gallery" role="group" aria-roledescription="карусель" aria-labelledby="product-title-safonov_shirt">
+            <div class="product-gallery__viewport">
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="1 из 2">
+                <picture>
             <source type="image/webp" srcset="images/responsive/safonov_shirt-320.webp 320w, images/responsive/safonov_shirt-640.webp 640w, images/responsive/safonov_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
             <img src="images/safonov_shirt.webp" alt="Футболка PSG Safonov 39" width="960" height="960" loading="lazy" class="card-image">
           </picture>
+              </figure>
+              <figure class="product-gallery__slide" role="group" aria-roledescription="слайд" aria-label="2 из 2" hidden>
+                <picture>
+                  <source type="image/webp" srcset="images/gallery/safonov_shirt-320.webp 320w, images/gallery/safonov_shirt-640.webp 640w, images/gallery/safonov_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+                  <img src="images/gallery/safonov_shirt-960.webp" alt="Футболка PSG Safonov 39, вид сзади" width="960" height="960" loading="lazy" decoding="async" class="card-image">
+                </picture>
+              </figure>
+            </div>
+            <div class="product-gallery__controls" hidden>
+              <button class="product-gallery__button" type="button" data-gallery-direction="-1" aria-label="Предыдущее фото"><span aria-hidden="true">&#8249;</span></button>
+              <span class="product-gallery__status" aria-live="polite" aria-atomic="true">Фото 1 из 2</span>
+              <button class="product-gallery__button" type="button" data-gallery-direction="1" aria-label="Следующее фото"><span aria-hidden="true">&#8250;</span></button>
+            </div>
+          </div>
           <p class="product-card__price">Цена: 6000 руб.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Футболка PSG Safonov 39">
             Заказать
