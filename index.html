@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Учебный интернет-магазин</title>
+  <title>FootballShop — футбольная атрибутика</title>
+  <meta name="description" content="Футболки, шорты и фигурки любимых футболистов в учебном магазине FootballShop.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/main.js" defer></script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Учебный интернет-магазин">
   <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
-  <meta property="og:image" content="https://zcryl.github.io/kr1-html-css-shop/images/preview.jpg">
+  <meta property="og:image" content="https://zcryl.github.io/kr3-responsive-shop/images/preview.jpg">
 
 </head>
 <body class="page">
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
   <div class="site-header__inner">
-    <h1 class="site-header__logo" href="index.html">FootballShop</h1>
+    <a class="site-header__logo" href="index.html">FootballShop</a>
 
     <nav class="site-nav" aria-label="Основная навигация">
       <ul class="site-nav__list">
@@ -31,16 +33,17 @@
   </header>
 
 
-  <main class="page__main">
-    <!-- <section class="hero">
-      <h1>Учебный интернет-магазин</h1>
-      <p>
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем на её основе будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
-      </p>
-      <a class="button button--primary" href="#popular">Перейти к товарам</a>
-    </section> -->
+  <main class="page__main" id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">FootballShop — всё для футбольного болельщика</h1>
+      <p>Футболки любимых клубов, игровые шорты и коллекционные фигурки футболистов.</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="catalog.html">Открыть каталог</a>
+        <a class="button button--secondary" href="#popular">Популярные товары</a>
+      </div>
+    </section>
+
+    
 
     <section class="section" id="popular">
       <h2 class="section__title">Популярные товары</h2>
@@ -48,23 +51,25 @@
       <div class="products-grid">
         <article class="product-card">
           <h3 class="product-card__title">Футболка FCB Raphinha 11</h3>
-          <img 
-          src="images/raphinha_shirt.jpg"
-          class="card-image"/>
-          <!-- <p class="product-card__description">Краткое описание учебного товара.</p> -->
+          <picture>
+            <source type="image/webp" srcset="images/responsive/raphinha_shirt-320.webp 320w, images/responsive/raphinha_shirt-640.webp 640w, images/responsive/raphinha_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/raphinha_shirt.jpg" alt="Футболка FCB Raphinha 11" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
+          
           <p class="product-card__price">Цена: 15000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
+          <button class="button button--primary product-card__button" type="button" data-product="Футболка FCB Raphinha 11">
             Заказать
           </button>
         </article>
 
         <article class="product-card">
           <h3 class="product-card__title">Игрушка Funco POP Raphinia</h3>
-          <img 
-            src="images/raphinha_POP.jpg"
-            class="card-image"/>
+          <picture>
+            <source type="image/webp" srcset="images/responsive/raphinha_POP-320.webp 320w, images/responsive/raphinha_POP-640.webp 640w, images/responsive/raphinha_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/raphinha_POP.jpg" alt="Игрушка Funco POP Raphinia" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
           <p class="product-card__price">Цена: 10000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
+          <button class="button button--primary product-card__button" type="button" data-product="Игрушка Funco POP Raphinia">
             Заказать
           </button>
 
@@ -72,39 +77,42 @@
 
         <article class="product-card">
           <h3 class="product-card__title">Игрушка Funco POP Lamine Yamal</h3>
-          <img 
-            src="images/Lamine_POP.webp"
-            class="card-image"/>
+          <picture>
+            <source type="image/webp" srcset="images/responsive/Lamine_POP-320.webp 320w, images/responsive/Lamine_POP-640.webp 640w, images/responsive/Lamine_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/Lamine_POP.webp" alt="Игрушка Funco POP Lamine Yamal" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
           <p class="product-card__price">Цена: 6000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
+          <button class="button button--primary product-card__button" type="button" data-product="Игрушка Funco POP Lamine Yamal">
             Заказать
           </button>
         </article>
       </div>
     </section>
 
-    <section class="section" id="popular">
+    <section class="section" id="new-products">
       <h2 class="section__title">Новинки!</h2>
 
       <div class="products-grid">
         <article class="product-card">
           <h3 class="product-card__title">Игрушка Funco POP Ronaldo</h3>
-          <img 
-            src="images/CR7_POP.jpg"
-            class="card-image"/>
+          <picture>
+            <source type="image/webp" srcset="images/responsive/CR7_POP-320.webp 320w, images/responsive/CR7_POP-640.webp 640w, images/responsive/CR7_POP-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/CR7_POP.jpg" alt="Игрушка Funco POP Ronaldo" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
           <p class="product-card__price">Цена: 10000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
+          <button class="button button--primary product-card__button" type="button" data-product="Игрушка Funco POP Ronaldo">
             Заказать
           </button>
         </article>
 
         <article class="product-card">
           <h3 class="product-card__title">Футболка Monaco Golovin 10</h3>
-          <img 
-            src="images/golobin_shirt.webp"
-            class="card-image"/>
+          <picture>
+            <source type="image/webp" srcset="images/responsive/golobin_shirt-320.webp 320w, images/responsive/golobin_shirt-640.webp 640w, images/responsive/golobin_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/golobin_shirt.webp" alt="Футболка Monaco Golovin 10" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
           <p class="product-card__price">Цена: 8000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
+          <button class="button button--primary product-card__button" type="button" data-product="Футболка Monaco Golovin 10">
             Заказать
           </button>
 
@@ -112,11 +120,12 @@
 
         <article class="product-card">
           <h3 class="product-card__title">Футболка PSG Safonov 39 </h3>
-          <img 
-          src="images/safonov_shirt.webp"
-          class="card-image"/>
+          <picture>
+            <source type="image/webp" srcset="images/responsive/safonov_shirt-320.webp 320w, images/responsive/safonov_shirt-640.webp 640w, images/responsive/safonov_shirt-960.webp 960w" sizes="(min-width: 1148px) 330px, (min-width: 1024px) calc((100vw - 190px) / 3), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/safonov_shirt.webp" alt="Футболка PSG Safonov 39" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
           <p class="product-card__price">Цена: 6000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
+          <button class="button button--primary product-card__button" type="button" data-product="Футболка PSG Safonov 39">
             Заказать
           </button>
         </article>
@@ -138,14 +147,7 @@
 
     
 
-    <!-- <aside class="aside-info">
-      <h2>Информация для студентов</h2>
-      <p>
-        На следующих практических занятиях этот проект будет расширяться:
-        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-        БЭМ-структура и адаптивная версия сайта.
-      </p>
-    </aside> -->
+    
   </main>
 
   <footer class="site-footer home-page" id="contacts">
@@ -217,7 +219,7 @@
         </select>
       </div>
 
-      <div class="order-form__field">
+      <div class="order-form__field order-form__field--wide">
         <label class="order-form__label" for="order-comment">Комментарий</label>
         <textarea class="order-form__textarea"
           id="order-comment"

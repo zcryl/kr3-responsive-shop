@@ -10,13 +10,14 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="Учебный интернет-магазин">
         <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
-        <meta property="og:image" content="https://zcryl.github.io/kr1-html-css-shop/images/preview.jpg">
+        <meta property="og:image" content="https://zcryl.github.io/kr3-responsive-shop/images/preview.jpg">
 
     </head>
     <body class="page">
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
     <header class="site-header">
         <div class="site-header__inner">
-        <h1 class="site-header__logo" href="index.html">FootballShop</h1>
+        <a class="site-header__logo" href="index.html">FootballShop</a>
 
         <nav class="site-nav" aria-label="Основная навигация">
             <ul class="site-nav__list">
@@ -29,7 +30,7 @@
         </div>
   </header>
 
-  <main class="page__main">
+  <main class="page__main" id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <span class="breadcrumbs__current" aria-current="page">Контакты</span>
@@ -41,9 +42,9 @@
         Контактная информация учебного интернет-магазина.
       </p>
 
-      <ul>
-        <li>Телефон: +7 (900) 777-77-77</li>
-        <li>E-mail: nepishite@syda.com</li>
+      <ul class="contact-list">
+        <li>Телефон: <a href="tel:+79007777777">+7 (900) 777-77-77</a></li>
+        <li>E-mail: <a href="mailto:nepishite@syda.com">nepishite@syda.com</a></li>
         <li>Адрес: г. Москва, РТУ МИРЭА</li>
         <li>Вконтакте: vk.ru/mypage</li>
         <li>tg: @petrosnya </li>
@@ -55,7 +56,7 @@
       <p>
         Для отправки заявки используйте форму в модальном окне на главной странице.
       </p>
-      <a class="button button--primary" href="index.html#contacts">Перейти к форме</a>
+      <a class="button button--primary" href="index.html#request">Перейти к форме</a>
     </section>
   </main>
 

@@ -12,14 +12,15 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="Учебный интернет-магазин">
         <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
-        <meta property="og:image" content="https://zcryl.github.io/kr1-html-css-shop/images/preview.jpg">
+        <meta property="og:image" content="https://zcryl.github.io/kr3-responsive-shop/images/preview.jpg">
         <script src="js/catalog.js" defer></script>
     </head>
 
     <body class="page">
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
         <header class="site-header">
             <div class="site-header__inner">
-                <h1 class="site-header__logo" href="index.html">FootballShop</h1>
+                <a class="site-header__logo" href="index.html">FootballShop</a>
 
                 <nav class="site-nav" aria-label="Основная навигация">
                     <ul class="site-nav__list">
@@ -32,7 +33,7 @@
             </div>
         </header>
 
-        <main class="page__main">
+        <main class="page__main" id="main" tabindex="-1">
             <nav class="breadcrumbs" aria-label="Хлебные крошки">
                 <a class="breadcrumbs__link" href="index.html">Главная</a>
                 <span class="breadcrumbs__current" aria-current="page">Каталог</span>
@@ -42,7 +43,7 @@
                 <h1>Каталог товаров</h1>
             </section>
 
-            <section class="catalog-layout">
+            <div class="catalog-layout">
                 <aside class="catalog-filters">
                     <h2>Фильтры</h2>
 
@@ -97,7 +98,7 @@
                     </button>
 
                     <button 
-                    class="button--secondary"
+                    class="button button--secondary"
                     type="reset">
                         Сбросить
                     </button>
@@ -114,12 +115,13 @@
                 data-price="15000"
                 >
                     <h3 class="product-card__title">Футболка FCB Raphinha 11</h3>
-                    <img 
-                        src="images/raphinha_shirt.jpg"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/raphinha_shirt-320.webp 320w, images/responsive/raphinha_shirt-640.webp 640w, images/responsive/raphinha_shirt-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/raphinha_shirt.jpg" alt="Футболка FCB Raphinha 11" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Фанатская версия футболки Barcelona Raphinha 11.</p>
                     <p class="product-card__price">Цена: 15000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 <article 
@@ -128,12 +130,13 @@
                 data-price="10000"
                 >
                     <h3 class="product-card__title">Футболка PSG Safonov 39</h3>
-                    <img 
-                        src="images/safonov_shirt.webp"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/safonov_shirt-320.webp 320w, images/responsive/safonov_shirt-640.webp 640w, images/responsive/safonov_shirt-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/safonov_shirt.webp" alt="Футболка PSG Safonov 39" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Фанатская версия футболки PSG Safonov 39.</p>
                     <p class="product-card__price">Цена: 10000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 <article 
@@ -141,12 +144,13 @@
                 data-category="toys"
                 data-price="10000">
                     <h3 class="product-card__title">Игрушка Funco POP Cristiano Ronaldo</h3>
-                    <img 
-                        src="images/CR7_POP.jpg"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/CR7_POP-320.webp 320w, images/responsive/CR7_POP-640.webp 640w, images/responsive/CR7_POP-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/CR7_POP.jpg" alt="Игрушка Funco POP Cristiano Ronaldo" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Игрушка Funco POP Portugal Cristiano Ronaldo </p>
                     <p class="product-card__price">Цена: 10000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 <article 
@@ -154,12 +158,13 @@
                 data-category="toys"
                 data-price="6000">
                     <h3 class="product-card__title">Игрушка Lamine Yamal</h3>
-                    <img 
-                        src="images/Lamine_POP.webp"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/Lamine_POP-320.webp 320w, images/responsive/Lamine_POP-640.webp 640w, images/responsive/Lamine_POP-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/Lamine_POP.webp" alt="Игрушка Lamine Yamal" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Игрушка Funco POP Barcelona Lamine Yamal.</p>
                     <p class="product-card__price">Цена: 6000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 <article
@@ -167,12 +172,13 @@
                 data-category="shorts"
                 data-price="8000">
                     <h3 class="product-card__title">Шорты FC Barcelona</h3>
-                    <img 
-                        src="images/barcelona_shorts.jpg"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/barcelona_shorts-320.webp 320w, images/responsive/barcelona_shorts-640.webp 640w, images/responsive/barcelona_shorts-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/barcelona_shorts.jpg" alt="Шорты FC Barcelona" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Краткое описание учебного товара.</p>
                     <p class="product-card__price">Цена: 8000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 <article 
@@ -180,12 +186,13 @@
                 data-category="shorts"
                 data-price="8000">
                     <h3 class="product-card__title">Шорты PSG</h3>
-                    <img 
-                        src="images/PSG_shorts.jpg"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/PSG_shorts-320.webp 320w, images/responsive/PSG_shorts-640.webp 640w, images/responsive/PSG_shorts-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/PSG_shorts.jpg" alt="Шорты PSG" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Краткое описание учебного товара.</p>
                     <p class="product-card__price">Цена: 8000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 <article 
@@ -193,12 +200,13 @@
                 data-category="shorts"
                 data-price="6000">
                     <h3 class="product-card__title">Шорты FC Monaco </h3>
-                    <img 
-                        src="images/monaco_shorts.jpg"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/monaco_shorts-320.webp 320w, images/responsive/monaco_shorts-640.webp 640w, images/responsive/monaco_shorts-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/monaco_shorts.jpg" alt="Шорты FC Monaco" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Краткое описание учебного товара.</p>
                     <p class="product-card__price">Цена: 6000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 <article
@@ -206,23 +214,25 @@
                 data-category="shirts"
                 data-price="10000">
                     <h3 class="product-card__title">Футболка FC Monaco Golovin 10</h3>
-                    <img 
-                        src="images/golobin_shirt.webp"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/golobin_shirt-320.webp 320w, images/responsive/golobin_shirt-640.webp 640w, images/responsive/golobin_shirt-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/golobin_shirt.webp" alt="Футболка FC Monaco Golovin 10" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Фанатская версия футболки Monaco игрока Golovin 10.</p>
                     <p class="product-card__price">Цена: 10000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
                 <article class="product-card"
                 data-category="toys"
                 data-price="6000">
                     <h3 class="product-card__title">Игрушка Funco POP Raphinia</h3>
-                    <img 
-                        src="images/raphinha_POP.jpg"
-                        class="card-image"/>
+                    <picture>
+            <source type="image/webp" srcset="images/responsive/raphinha_POP-320.webp 320w, images/responsive/raphinha_POP-640.webp 640w, images/responsive/raphinha_POP-960.webp 960w" sizes="(min-width: 1200px) 246px, (min-width: 1024px) calc((100vw - 380px) / 2), (min-width: 768px) calc((100vw - 140px) / 2), calc(100vw - 66px)">
+            <img src="images/raphinha_POP.jpg" alt="Игрушка Funco POP Raphinia" width="960" height="960" loading="lazy" class="card-image">
+          </picture>
                     <p class="product-card__description">Игрушка Funco POP Barcelona Raphinia </p>
                     <p class="product-card__price">Цена: 6000 руб.</p>
-                    <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    <a class="button button--primary product-card__button" href="index.html#request">Оставить заявку</a>
                 </article>
 
                 
@@ -231,7 +241,24 @@
                         По выбранным фильтрам товары не найдены.
                     </p>
                 </section>
-            </section>
+            </div>
+        
+    <section class="section" aria-labelledby="sizes-title">
+      <h2 id="sizes-title">Как выбрать размер футболки</h2>
+      <p id="sizes-hint">Учебная таблица: ориентировочные мерки в сантиметрах. На телефоне таблицу можно прокрутить вбок.</p>
+      <div class="table-wrapper" role="region" aria-labelledby="sizes-title" aria-describedby="sizes-hint" tabindex="0">
+        <table class="product-table">
+          <caption>Размеры футбольных футболок</caption>
+          <thead><tr><th scope="col">Размер</th><th scope="col">Обхват груди, см</th><th scope="col">Длина, см</th><th scope="col">Посадка</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">S</th><td>88–96</td><td>70</td><td>Стандартная</td></tr>
+            <tr><th scope="row">M</th><td>96–104</td><td>73</td><td>Стандартная</td></tr>
+            <tr><th scope="row">L</th><td>104–112</td><td>76</td><td>Стандартная</td></tr>
+            <tr><th scope="row">XL</th><td>112–124</td><td>79</td><td>Свободная</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
         </main>
     <footer class="site-footer">
         <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
